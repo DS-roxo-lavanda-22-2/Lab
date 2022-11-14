@@ -5,4 +5,7 @@ def menu():
 def soma(a,b):
     result = a +b
     return result
-    
+
+def subtracao(a,b):
+    result = a - b
+    return result
