@@ -13,57 +13,16 @@
 
   <div class="container">
     <ul class="list">
-      <li>
-        <div class="card">
-          <img src="https://solutioncredits.com/wp-content/uploads/2021/01/avatar-uomo.png">
-          <h2>Nome: joão</h2>
-          <h3>Idade: 22</h3>
-          <h3>Cargo: Dev</h3>
-        </div>
-      </li>
-      <li>
-        <div class="card">
-          <img src="https://solutioncredits.com/wp-content/uploads/2021/01/avatar-uomo.png">
-          <h2>Nome: joão</h2>
-          <h3>Idade: 22</h3>
-          <h3>Cargo: Dev</h3>
-        </div>
-      </li>
-
-      <li>
-        <div class="card">
-          <img src="https://solutioncredits.com/wp-content/uploads/2021/01/avatar-uomo.png">
-          <h2>Nome: joão</h2>
-          <h3>Idade: 22</h3>
-          <h3>Cargo: Dev</h3>
-        </div>
-      </li>
-      <li>
-        <div class="card">
-          <img src="https://solutioncredits.com/wp-content/uploads/2021/01/avatar-uomo.png">
-          <h2>Nome: joão</h2>
-          <h3>Idade: 22</h3>
-          <h3>Cargo: Dev</h3>
-        </div>
-      </li>
-
-      <li>
-        <div class="card">
-          <img src="https://solutioncredits.com/wp-content/uploads/2021/01/avatar-uomo.png">
-          <h2>Nome: joão</h2>
-          <h3>Idade: 22</h3>
-          <h3>Cargo: Dev</h3>
-        </div>
-      </li>
-      <li>
-        <div class="card">
-          <img src="https://solutioncredits.com/wp-content/uploads/2021/01/avatar-uomo.png">
-          <h2>Nome: joão</h2>
-          <h3>Idade: 22</h3>
-          <h3>Cargo: Dev</h3>
-        </div>
-      </li>
-  
+      {% for user in users %}
+        <li>
+          <div class="card">
+            <img src="https://solutioncredits.com/wp-content/uploads/2021/01/avatar-uomo.png">
+            <h2>Nome: {{user.name}}</h2>
+            <h3>Data Nasc.: {{ user.birthday }}</h3>
+            <h3>Cargo: {{user.function}}</h3>
+          </div>
+        </li>
+      {% endfor %}
     </ul>
   </div>
   
